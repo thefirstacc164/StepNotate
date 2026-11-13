@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>StepNotate installed</title>
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/welcome.css">
+</head>
+<body>
+  <header class="welcome-top">
+    <div class="brand">
+      <span class="mark">
+        <svg viewBox="0 0 128 128" aria-hidden="true">
+          <rect width="128" height="128" rx="30" fill="#1b1f24"/>
+          <path d="M29 96V55h22V35h22V15h26v81H29Z" fill="#faf8f3"/>
+          <rect x="29" y="100" width="70" height="10" rx="5" fill="#d8482a"/>
+        </svg>
+      </span>
+      <span class="wordmark">Step<em>Notate</em></span>
+    </div>
+    <span class="installed"><span class="dot"></span> Installed</span>
+  </header>
+
+  <main class="welcome-wrap">
+    <section class="welcome-hero">
+      <div class="hero-copy">
+        <p class="eyebrow">PDF &amp; image markup</p>
+        <h1>Mark up anything<br>you can open.</h1>
+        <p class="lede">
+          StepNotate is a markup workbench for documents. Highlight the paragraph that matters, sketch in the
+          margin, leave a note, sign the last page. Everything stays on your machine.
+        </p>
+        <div class="hero-buttons">
+          <button class="btn btn-primary" id="openApp">Open StepNotate</button>
+          <button class="btn btn-ghost" id="openSample">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v5h5"/></svg>
+            Try the sample
+          </button>
+        </div>
+        <p class="hero-hint">Sample is a 3-page guide you can scribble on. Nothing is saved to a server.</p>
+      </div>
+
+      <div class="hero-art" aria-hidden="true">
+        <div class="art-paper">
+          <div class="art-lines">
+            <span style="width:62%"></span>
+            <span style="width:80%"></span>
+            <span class="hl-line" style="width:71%"></span>
+            <span style="width:66%"></span>
+            <span style="width:78%"></span>
+            <span style="width:54%"></span>
+            <span class="hl-line alt" style="width:74%"></span>
+            <span style="width:69%"></span>
+            <span style="width:44%"></span>
+          </div>
+          <svg class="art-underline" viewBox="0 0 220 40"><path d="M4 30C40 8 88 6 120 16s62 18 96 4" fill="none" stroke="#d8482a" stroke-width="3" stroke-linecap="round"/><path d="M188 30l16-14-2 20" fill="none" stroke="#d8482a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <div class="art-note">
+            <span>Move this to page 2<br>before Friday?</span>
+          </div>
+          <div class="art-sign">St3p</div>
+        </div>
+        <div class="art-tag">Highlight · Ink · Notes · Sign</div>
+      </div>
+    </section>
+
+    <section class="steps">
+      <article class="step">
+        <div class="step-num">01</div>
+        <h2>Open</h2>
+        <p>Click the StepNotate icon and pick a file, or drop a PDF, PNG or JPG straight into the workspace. Right-click any PDF link on the web and choose <em>Open link in StepNotate</em>.</p>
+      </article>
+      <article class="step">
+        <div class="step-num">02</div>
+        <h2>Mark</h2>
+        <p>Select text to highlight, underline or strike it. Pen, marker, shapes, text boxes, sticky notes, signatures and image stamps sit in one toolbar. Shortcuts are one key away.</p>
+      </article>
+      <article class="step">
+        <div class="step-num">03</div>
+        <h2>Keep</h2>
+        <p>Work saves itself to this browser as you go. Export a flattened PDF, a PNG, or a project file you can reopen and keep editing later. No account, no watermarks.</p>
+      </article>
+    </section>
+
+    <section class="pin-tip">
+      <div class="pin-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4h6l-1 7 3 3v2H7v-2l3-3-1-7Z"/><path d="M12 16v4"/></svg>
+      </div>
+      <div>
+        <h3>Keep it within reach</h3>
+        <p>Click the puzzle-piece icon in your toolbar, then the pin beside StepNotate. It will stay next to your address bar.</p>
+      </div>
+      <button class="btn btn-ghost" id="openAppTwo">Open workspace</button>
+    </section>
+  </main>
+
+  <footer class="welcome-foot">
+    <span>Built by St3p · Free to use · Nothing leaves this device</span>
+    <span class="foot-links">
+      <button class="btn-quiet" id="showShortcuts">Shortcuts</button>
+      <button class="btn-quiet" id="showAbout">About</button>
+    </span>
+  </footer>
+
+  <div class="welcome-modal" id="infoModal" hidden>
+    <div class="modal-card">
+      <button class="icon-btn modal-close" id="closeModal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg>
+      </button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <script type="module" src="js/welcome.js"></script>
+</body>
+</html>
