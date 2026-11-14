@@ -25,10 +25,8 @@
     "type": "module"
   },
   "permissions": [
-    "storage",
     "unlimitedStorage",
-    "contextMenus",
-    "tabs"
+    "contextMenus"
   ],
   "host_permissions": [
     "<all_urls>"
